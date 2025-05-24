@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuizi 1 - Dita e Pi</title>
+  <link rel="stylesheet" href="style_pi_day.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #d6e4f0, #ffffff);
+      min-height: 100vh;
+      padding-top: 100px;
+    }
+    header {
+      background-color: #314e52;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .quiz-container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #0d47a1;
+    }
+    .question {
+      font-size: 18px;
+      margin: 20px 0 10px;
+    }
+    .answers label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #e94f37;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c43c2f;
+    }
+  </style>
+</head>
+<body>
+  <header>Kuizi 1 - Dita e Pi</header>
+  <main>
+    <div class="quiz-container">
+      <h1>Kuiz 1 - Rreth Numrit Pi</h1>
+      <div id="quiz"></div>
+      <button id="submit">Dërgo</button>
+      <div id="result"></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
