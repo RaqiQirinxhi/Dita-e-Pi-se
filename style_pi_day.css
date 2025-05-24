@@ -1,0 +1,226 @@
+/* Përgjithësisht për të gjitha faqet */
+body {
+ font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Adjusted to start at the top for scroll */
+  height: 100%;
+  overflow-y: auto; /* Allow scrolling if content exceeds the viewport */
+}
+
+/* Container për përmbajtjen e quiz-it */
+.quiz-container {
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 80%; /* Adjusted for better fit */
+  max-width: 1200px; /* Increased max width for larger content */
+  margin-top: 20px;
+  position: relative;
+  max-height: 90vh; /* Allow height to adjust with content */
+  overflow-y: scroll; /* Scroll for content if needed */
+}
+
+/* Title */
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Përshkrimi */
+p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Pyetjet */
+.question {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #333;
+}
+
+/* Butonat e quiz-it */
+button {
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Styling për faqen kryesore */
+body.home-page {
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.home-page h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* Stilizimi për Pi Day Quiz */
+.quiz-page.pi-day {
+  background-color: #ffebcd;
+}
+
+.quiz-page.pi-day h1 {
+  color: #ff4500;
+}
+
+.quiz-page.mathematics {
+  background-color: #f0f8ff;
+}
+
+.quiz-page.mathematics h1 {
+  color: #0000ff;
+}
+
+.quiz-page.science {
+  background-color: #e0f7fa;
+}
+
+.quiz-page.science h1 {
+  color: #00bcd4;
+}
+
+/* Elementet vizuale për secilën faqe quiz */
+.quiz-page.pi-day::before {
+  content: "π";
+  font-size: 150px;
+  color: #ff4500;
+  position: absolute;
+  top: -50px;
+  left: -60px;
+  opacity: 0.2;
+}
+
+.quiz-page.mathematics::before {
+  content: "Σ";
+  font-size: 150px;
+  color: #0000ff;
+  position: absolute;
+  top: -50px;
+  right: -60px;
+  opacity: 0.2;
+}
+
+.quiz-page.science::before {
+  content: "H₂O";
+  font-size: 150px;
+  color: #00bcd4;
+  position: absolute;
+  bottom: -50px;
+  left: -60px;
+  opacity: 0.2;
+}
+
+/* === Pi Day Enhancements Below === */
+
+/* === Pi Day Themed Styles === */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, #fefefe, #d6e4f0);
+    color: #1e1e2f;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #314e52;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-bottom: 5px solid #e94f37;
+}
+
+main {
+    padding: 20px;
+}
+
+button {
+    background-color: #e94f37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d44130;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.pi-symbol {
+    font-size: 3em;
+    text-align: center;
+    margin: 10px 0;
+    color: #314e52;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    header {
+        font-size: 1.4em;
+        padding: 15px;
+    }
+    .card {
+        padding: 15px;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+.pi-top-left, .pi-top-right, .pi-bottom-left, .pi-bottom-right {
+    font-size: 40px;
+    color: #e0e0e0;
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+}
+<div class="pi-top-left">π</div>
+<div class="pi-top-right">π</div>
+<div class="pi-bottom-left">π</div>
+<div class="pi-bottom-right">π</div>
